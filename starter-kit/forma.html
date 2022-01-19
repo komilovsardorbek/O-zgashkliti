@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="pixelstrap">
     <title>Кузатувдаги Вазифалар</title>
-    <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
           rel="stylesheet">
@@ -19,23 +18,28 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/prism.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/calendar.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
 </head>
 <body>
-
-
+<style>
+    p {
+        margin: 0;
+    }
+</style>
+<div class="loader-wrapper">
+    <div class="theme-loader">
+        <div class="loader-p"></div>
+    </div>
+</div>
 <div class="page-wrapper" id="pageWrapper">
     <div class="page-main-header">
         <div class="main-header-right row m-0">
             <div class="main-header-left">
-                <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="" alt="#logo"></a></div>
-                <div class="dark-logo-wrapper"><a href="index.html"><img class="img-fluid" src="" alt="#logo"></a></div>
-                <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-left"
-                                               id="sidebar-toggle"></i></div>
+                <div class="logo-wrapper"><a href="index.html"><img style="width: 6rem" class="img-fluid" src="../assets/images/logo/logo.png" alt="#logo"></a></div>
+                <div class="dark-logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo.png" alt="#logo"></a></div>
+                <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-left" id="sidebar-toggle"></i></div>
             </div>
             <div class="left-menu-header col">
                 <ul>
@@ -50,36 +54,30 @@
                 </ul>
             </div>
             <div class="nav-right col pull-right right-menu p-0">
-                <ul class="nav-menus">
-                    <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i
-                            data-feather="maximize"></i></a></li>
+                <ul class="nav-menus" style="padding: 0px 20px;">
                     <li class="onhover-dropdown">
-                        <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span>
-                        </div>
+                        <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span></div>
                         <ul class="notification-dropdown onhover-show-div">
                             <li>
                                 <p class="f-w-700 mb-0">Сизда 3 та билдиришнома бор<span
                                         class="pull-right badge badge-primary badge-pill">3</span></p>
                             </li>
                             <li class="noti-primary">
-                                <div class="media"><span class="notification-bg bg-light-primary"><img
-                                        src="../assets/images/user/user.png" alt="user"></span>
+                                <div class="media"><span class="notification-bg bg-light-primary"><img src="../assets/images/user/user.png" alt="user"></span>
                                     <div class="media-body">
                                         <p>Сардорбек Комилов</p><span>1 соат олдин</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="noti-secondary">
-                                <div class="media"><span class="notification-bg bg-light-secondary"><img
-                                        src="../assets/images/user/user.png" alt="user"></span>
+                                <div class="media"><span class="notification-bg bg-light-secondary"><img src="../assets/images/user/user.png" alt="user"></span>
                                     <div class="media-body">
                                         <p>Aнвар Бекматов</p><span>4 соат олдин</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="noti-danger">
-                                <div class="media"><span class="notification-bg bg-light-danger"><img
-                                        src="../assets/images/user/user.png" alt="user"></span>
+                                <div class="media"><span class="notification-bg bg-light-danger"><img src="../assets/images/user/user.png" alt="user"></span>
                                     <div class="media-body">
                                         <p>Рустам Шодмонов</p><span>6 соат олдин</span>
                                     </div>
@@ -87,36 +85,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <div class="mode"><i class="fa fa-moon-o"></i></div>
-                    </li>
-                    <li class="onhover-dropdown">
-                        <div><img style="width: 2rem;" src="../assets/images/user/user.png" alt=""></div>
-                        <ul class="notification-dropdown onhover-show-div">
-                            <li class="noti-primary">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p>Профил</p>
-                                    </div>
+                    <li class="">
+                        <a href="">
+                            <div class="media"><span class=""><img class="img-40 rounded-circle m-r-5" src="../assets/images/user/16.png" alt="#"></span>
+                                <div class="media-body">
+                                    <p style="color:#111727; font-weight: 700" class="m-0">Рустам Шодмонов</p><span style="color: #111727">менежер</span>
                                 </div>
-                            </li>
-                            <li class="noti-secondary">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p>Шахсий маълумотларим</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="noti-danger">
-                                <div class="media">
-                                    <a href="../starter-kit/login.html">
-                                        <div class="media-body">
-                                            <p><i data-feather="log-out"></i> Чиқиш</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -144,18 +120,19 @@
                                 <ul class="nav-submenu menu-content">
                                     <li><a href="../starter-kit/all_work.html">Барча ишлар</a></li>
                                     <li><a href="../starter-kit/work.html">Топографик-геодезик дастури</a></li>
-                                   <li><a href="../starter-kit/dawork.html">Дала назорати</a></li>
-                                  <li><a href="../starter-kit/kawork.html">Камера назорати</a></li>
+                                    <li><a href="../starter-kit/dawork.html">Дала назорати</a></li>
+                                    <li><a href="../starter-kit/kawork.html">Камера назорати</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a class="nav-link menu-title link-nav"
                                                     href="../starter-kit/users.html"><i data-feather="users"></i><span>Ходимлар</span></a>
                             </li>
                             <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i
-                                    data-feather="message-circle"></i><span>Хабарлар</span></a></li>
+                                    data-feather="message-circle"></i><span>Хабарлар<span style="float: right"
+                                                                                          class="badge rounded-pill badge-danger">3</span></span></a>
+                            </li>
                             <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i
                                     data-feather="arrow-down-circle"></i><span>Aрхив</span></a></li>
-                            <hr>
                             <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i
                                     data-feather="settings"></i><span>Созламалар</span></a></li>
                             <li style="position: fixed;bottom: 10px;"><a href="tel:+998711715658"><i
@@ -171,69 +148,52 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="stepwizard">
-                                    <div class="stepwizard-row setup-panel">
-                                        <div class="stepwizard-step"><a class="btn btn-primary" href="#step-1">1</a>
-                                        </div>
-                                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-2">2</a>
-                                            <p>Step 2</p>
-                                        </div>
-                                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-3">3</a>
-                                            <p>Step 3</p>
-                                        </div>
-                                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-4">4</a>
-                                            <p>Step 4</p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <form action="#" method="POST">
                                     <div class="setup-content" id="step-1">
                                         <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3 class="text-center">А К Т</h3>
-                                                <div class="row text-end">
-                                                    <div class="col-xl-4 col-sm-5 col-lg-5">
-                                                        <div class="text-end input-group date" id="dt-minimum"
-                                                             data-target-input="nearest">
-                                                            <input class=" text-end form-control datetimepicker-input digits"
-                                                                   type="text" data-target="#dt-minimum">
-                                                            <div class="input-group-text" data-target="#dt-minimum"
-                                                                 data-toggle="datetimepicker"><i class="fa fa-calendar"> </i></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <b>1. Полевого контроля и приемки топографических работ</b>
-                                                <p>Мы, нижеподписавшиеся:</p>
-                                                <div>
-                                                    <textarea style="width: 50%" class="form-control"
-                                                              id="exampleFormControlTextarea4" rows="3"></textarea>
-                                                </div>
-                                                <p>составили настоящий акт в том, что за период с</p>
-                                                <div class="col-xl-6 col-sm-7 col-lg-8 mb-4">
-                                                    <div class="input-group date" id="dt-disab-days"
+                                            <p class="text-end">ШНК 1.02.07-19 </p>
+                                            <p class="text-end">
+                                                Приложение F обязательное
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-lg-8"></div>
+                                                <div class="col-xl-4 col-sm-5 col-lg-5">
+                                                    <div class="text-end input-group date" id="dt-minimum"
                                                          data-target-input="nearest">
-                                                        <input class="form-control datetimepicker-input digits"
-                                                               type="text" data-target="#dt-disab-days">
-                                                        <div class="input-group-text" data-target="#dt-disab-days"
-                                                             data-toggle="datetimepicker"><i class="fa fa-calendar"></i>
-                                                        </div>
+                                                        <input class=" text-end form-control datetimepicker-input digits"
+                                                               type="text" data-target="#dt-minimum">
+                                                        <div class="input-group-text" data-target="#dt-minimum"
+                                                             data-toggle="datetimepicker"><i
+                                                                class="fa fa-calendar"> </i></div>
                                                     </div>
                                                 </div>
-                                                <p>произведен контроль и приемка топографических работ, выполненных на
-                                                    объекте:</p>
-                                                <input style="width: 50%" class="form-control" type="text"
-                                                       placeholder="№ дог.">
-                                                <p>по заданию заказчика</p>
-                                                <input style="width: 50%" class="form-control" type="text"
-                                                       placeholder=""><br>
-                                                <b class="text-center">виды и объемы выполненных работ: </b>
+                                            </div>
+                                            <h3 class="text-center">АКТ</h3>
+                                            <div class="col-md-12">
                                                 <br>
+                                                <h5 class="text-center">Полевого контроля и приемки топографических
+                                                    работ</h5>
+                                                <p>Мы, нижеподписавшиеся:</p>
+                                                <div><textarea style="width: 50%" class="form-control" rows="3"></textarea></div>
+                                                <p>составили настоящий акт в том, что за период с</p>
+                                                <div class="input-group date w-50" id="dt-disab-days"
+                                                     data-target-input="nearest">
+                                                    <input class="form-control datetimepicker-input digits" type="text"
+                                                           data-target="#dt-disab-days">
+                                                    <div class="input-group-text" data-target="#dt-disab-days"
+                                                         data-toggle="datetimepicker"><i class="fa fa-calendar"></i>
+                                                    </div>
+                                                </div>
+                                                <p>произведен контроль и приемка топографических работ, выполненных на объекте:</p>
+                                                <input style="width: 50%" class="form-control" type="text" placeholder="№ дог.">
+                                                <p>по заданию заказчика</p>
+                                                <input style="width: 50%" class="form-control" type="text" placeholder=""><br>
+                                                <h5 class="text-center">виды и объемы выполненных работ: </h5>
                                                 <div class="col-sm-12">
                                                     <div class="card border-0">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered">
-                                                                <thead>
+                                                                <thead class="bg-primary">
                                                                 <tr>
                                                                     <th scope="col">№ п/п</th>
                                                                     <th scope="col">Наименование виды работ</th>
@@ -308,201 +268,147 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">8</th>
-                                                                    <td>Перенос проекта в натуру и исполнительная
-                                                                        съемка
+                                                                    <td>
+                                                                        Перенос проекта в натуру и исполнительная съемка
                                                                     </td>
                                                                     <td>км</td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p>Работы выполнены в соответствии с программой работ, в <span><input
-                                                        style="border:1px solid #e6edef;"
-                                                        type="text"></span> системе
-                                                    координат и в <span><input style="border:1px solid #e6edef;"
-                                                                               type="text"></span> системе высот.</p>
-                                                <p>Результаты полевого контроля:</p>
-                                                <p>а) теодолитные хода</p>
-                                                <div class="col-sm-12 ">
+                                                <p>Работы выполнены в соответствии с программой работ, в
+                                                    <span><input style="border:1px solid #e6edef;" type="text"></span> системе
+                                                    координат и в
+                                                    <span><input style="border:1px solid #e6edef;" type="text"></span>
+                                                    системе высот.</p>
+                                                <h6>Результаты полевого контроля:</h6>
+                                                <p>
+                                                    <span class="badge rounded-pill badge-primary">a)</span>
+                                                    теодолитные хода
+                                                </p>
+                                                <div class="col-sm-12 m-t-5">
                                                     <div class="card border-0">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered">
-                                                                <thead>
+                                                            <table class="table table-bordered" id="childTable">
+                                                                <thead class="table-primary">
                                                                 <tr>
-                                                                    <th scope="col">№ п/п</th>
+                                                                    <th scope="col">№</th>
+                                                                    <th scope="col">Наименование хода</th>
                                                                     <th scope="col">Длина хода</th>
                                                                     <th scope="col">К-во углов</th>
-                                                                    <th colspan="2" scope="col">Угл
-                                                                        невязки:получ,допуст
-                                                                    </th>
-                                                                    <th colspan="2" scope="col">
-                                                                        Лин.невязки:абсол,относит
-                                                                    </th>
+                                                                    <th colspan="2" scope="col">Угл невязки:получ,допуст</th>
+                                                                    <th colspan="2" scope="col">Лин.невязки:абсол,относит</th>
+                                                                    <th scope=""></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                 <tr>
                                                                     <th scope="row">1</th>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row">2</th>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td>
+                                                                        <i id="addrow"  onclick="childrenRow()" class="fa fa-plus-circle f-20 txt-primary" aria-hidden="true"></i>
+                                                                    </td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                        <p>выполненные</p>
+                                                        <p>
+                                                            выполненные
+                                                            <span><input class="form-control w-50" type="text"></span>
+                                                        </p>
+                                                        <p>контрольные</p>
+                                                        <textarea class="form-control w-50"></textarea>
                                                     </div>
                                                 </div>
-                                                <p>контрольные</p>
-                                                <textarea style="width: 50%" class="form-control"
-                                                          id="exampleFormControlTextarea2" rows="3"></textarea>
-                                                <p>б) нивелирные хода</p>
-                                                <div class="col-sm-12 ">
+                                                <p><span class="badge rounded-pill badge-primary">б)</span> нивелирные хода</p>
+                                                <div class="col-sm-12 m-t-5">
                                                     <div class="card border-0">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered">
-                                                                <thead>
+                                                            <table class="table table-bordered" id="childTable1">
+                                                                <thead class="table-primary">
                                                                 <tr>
-                                                                    <th scope="col">№ п/п</th>
+                                                                    <th scope="col">№</th>
+                                                                    <th scope="col">Наименование хода</th>
                                                                     <th scope="col">Длина хода</th>
-                                                                    <th scope="col">К-во штатив</th>
-                                                                    <th colspan="2" scope="col">Невязки в
-                                                                        мм:получ,допуст
-                                                                    </th>
-                                                                    <th colspan="2" scope="col">Примеч</th>
+                                                                    <th scope="col">К-во углов</th>
+                                                                    <th colspan="2" scope="col">Угл невязки:получ,допуст</th>
+                                                                    <th colspan="2" scope="col">Лин.невязки:абсол,относит</th>
+                                                                    <th scope=""></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                 <tr>
                                                                     <th scope="row">1</th>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row">2</th>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td>
+                                                                        <i id="addrow1"  onclick="childrenTable()" class="fa fa-plus-circle f-20 txt-primary" aria-hidden="true"></i>
+                                                                    </td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                        <p>выполненные</p>
+                                                        <p>
+                                                            выполненные
+                                                            <span><input class="form-control w-50" type="text"></span>
+                                                        </p>
                                                         <p>контрольные</p>
-                                                        <textarea style="width: 50%" class="form-control"
-                                                                  id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        <textarea class="form-control w-50"></textarea>
                                                     </div>
                                                 </div>
                                                 <p>Топографическая съемка, перенос проекта в натуру,
                                                     контрольно-испольнительная съемка (виды выполненных работ
                                                     подчеркнуть)
-                                                    проверена на <span><input style="border:1px solid #e6edef;"
-                                                                              type="text"></span>
-                                                    планшетах с номенклатурой: <span><input
-                                                            style="border:1px solid #e6edef;" type="text"></span>
+                                                    проверена на
+                                                    <span><input style="border:1px solid #e6edef;" type="text"></span>
+                                                    планшетах с номенклатурой:
+                                                    <span><input style="border:1px solid #e6edef;" type="text"></span>
                                                 </p>
-                                                <div class="col-sm-12 ">
+                                                <div class="col-sm-12 m-t-10">
                                                     <div class="card border-0">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered">
-                                                                <thead>
+                                                            <table class="table table-bordered" id="childTable2">
+                                                                <thead class="bg-primary">
                                                                 <tr>
+                                                                    <th scope="col">№</th>
                                                                     <th scope="col">Оценка качества</th>
-                                                                    <th colspan="2" scope="col">Средняя ошибка
-                                                                        (расхождение) в мм плана
-                                                                    </th>
-                                                                    <th colspan="2" scope="col">Расхождение превышающее
-                                                                        1мм плана в проц.
-                                                                    </th>
-                                                                    <th colspan="2" scope="col">Средняя ошибка
-                                                                        (расхождение) в см по высоте
-                                                                    </th>
-                                                                    <th colspan="2" scope="col">Расхождения превышающие
-                                                                        двойной в проц.
-                                                                    </th>
+                                                                    <th colspan="2" scope="col">Средняя ошибка (расхождение) в мм плана</th>
+                                                                    <th colspan="2" scope="col">Расхождение превышающее 1мм плана в проц.</th>
+                                                                    <th colspan="2" scope="col">Средняя ошибка (расхождение) в см по высоте</th>
+                                                                    <th colspan="2" scope="col">Расхождения превышающие двойной в проц.</th>
+                                                                    <th scope="col"></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
-                                                                    <td><input class="border-0 w-100" type="text"
-                                                                               placeholder=""></td>
+                                                                    <td class="table-primary" scope="row">1</td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td><input class="border-0 w-100" type="text" placeholder=""></td>
+                                                                    <td>
+                                                                        <i id="addrow2"  onclick="childrentable()" class="fa fa-plus-circle f-20 txt-primary" aria-hidden="true"></i>
+                                                                    </td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
@@ -510,15 +416,52 @@
                                                     </div>
                                                 </div>
                                                 <p>Состояние полевой документации:</p>
-                                                <textarea style="width: 50%" class="form-control"
-                                                          id="exampleFormControlTextarea5"
-                                                          rows="3" placeholder=""></textarea>
+                                                <textarea class="form-control w-50" type="text" placeholder="журналы,максимальные,отклонения в измерениях"></textarea>
                                                 <p>Замечания по оформлению планшетов:</p>
-                                                <textarea style="width: 50%" class="form-control"
-                                                          id="exampleFormControlTextarea6"
-                                                          rows="3"></textarea>
-                                                <button class="btn btn-primary nextBtn pull-right" type="button">Next
-                                                </button>
+                                                <textarea class="form-control w-50" placeholder="указать среднее количество пикетов на 1 кв дц:,"></textarea>
+                                                <div class="mb-3 row m-t-15">
+                                                    <label class="col-sm-3 col-form-label">Замечания исправил</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Заключение: Оценка качества работ </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" type="text" placeholder=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Работу сдал</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="text" placeholder="исполнитель">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Работу сдал</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="text" placeholder="начальник партии">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Общая оценка качества выпускаемой продукции</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" type="text" placeholder=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Начальник отдела (подразделения)</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="text" placeholder="начальник партии">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-3 col-form-label">Глав.спец.отдела (подразделения)</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="text" placeholder="начальник партии">
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary nextBtn pull-right" type="button">Keyingisi <i class="fa fa-long-arrow-right"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -580,6 +523,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="stepwizard m-t-100">
+                    <div class="stepwizard-row setup-panel">
+                        <div class="stepwizard-step"><a class="btn btn-primary" href="#step-1">1</a>
+                        </div>
+                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-2">2</a>
+                            <p>Step 2</p>
+                        </div>
+                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-3">3</a>
+                            <p>Step 3</p>
+                        </div>
+                        <div class="stepwizard-step"><a class="btn btn-light" href="#step-4">4</a>
+                            <p>Step 4</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Container-fluid Ends-->
         </div>
@@ -588,11 +546,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 footer-copyright">
-                        <p class="mb-0">Copyright 2021-22 © viho All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i>
-                        </p>
+                        <p class="mb-0">Copyright 2021-22 © O'zgashtliti </p>
                     </div>
                 </div>
             </div>
@@ -618,6 +572,7 @@
 <script src="../assets/js/datepicker/date-time-picker/moment.min.js"></script>
 <script src="../assets/js/datepicker/date-time-picker/tempusdominus-bootstrap-4.min.js"></script>
 <script src="../assets/js/datepicker/date-time-picker/datetimepicker.custom.js"></script>
+<script src="../assets/js/boottable.js"></script>
 <!-- Plugins JS Ends-->
 </body>
 </html>
