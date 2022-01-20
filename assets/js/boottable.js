@@ -59,3 +59,60 @@ function childrentabl1() {
         '<td \n' + 'class="fa fa-plus-circle f-20 txt-primary"\n' +
         'id="addrow3" onclick="childrentabl1()"\n' + '/></td>\n' +'</td></tr>');
 }
+var y = 1;
+function childrentabl2() {
+    y++;
+    $('#childTable4').find('tbody').append('<tr><th scope="row">' + y +
+        '</th>' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td \n' + 'class="fa fa-plus-circle f-20 txt-primary"\n' +
+        'id="addrow4" onclick="childrentabl2()"\n' + '/></td>\n' +'</td></tr>');
+}
+var z = 1;
+function childrentabl3() {
+    z++;
+    $('#childTable5').find('tbody').append('<tr><th scope="row">' + z +
+        '</th>' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td \n' + 'class="fa fa-plus-circle f-20 txt-primary"\n' +
+        'id="addrow5" onclick="childrentabl3()"\n' + '/></td>\n' +'</td></tr>');
+}
+var q = 1;
+function childrentabl4() {
+    q++;
+    $('#childTable6').find('tbody').append('<tr><th scope="row">' + q +
+        '</th>' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td \n' + 'class="fa fa-plus-circle f-20 txt-primary"\n' +
+        'id="addrow6" onclick="childrentabl4()"\n' + '/></td>\n' +'</td></tr>');
+}
+var r = 1;
+function childrentabl5() {
+    r++;
+    $('#childTable7').find('tbody').append('<tr><th scope="row">' + r +
+        '</th>' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td><input class="border-0 w-100" type="text"\n' + 'placeholder=""></td>\n' +
+        '<td \n' + 'class="fa fa-plus-circle f-20 txt-primary"\n' +
+        'id="addrow7" onclick="childrentabl5()"\n' + '/></td>\n' +'</td></tr>');
+}
