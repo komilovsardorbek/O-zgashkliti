@@ -373,9 +373,9 @@ var charttimeline = new ApexCharts(document.querySelector("#chart-timeline-dashb
 charttimeline.render();
 // second chart dashbord dafault
 var options17 = {
-  series: [76, 67, 61, 90],
+  series: [80, 67, 61, 90],
   chart: {
-      height: 380,
+      height: 500,
       type: 'radialBar',
   },
   plotOptions: {
@@ -400,11 +400,11 @@ var options17 = {
       }
   },
   colors: [vihoAdminConfig.primary, vihoAdminConfig.secondary, vihoAdminConfig.primary, vihoAdminConfig.secondary],
-  labels: ['Total order', 'Total product', 'Quantity', 'Page views'],
+  labels: ['Общая работа, выполненная сотрудником', 'Поисковая работа', 'Его текущая работа', 'Возвращенные работы'],
   legend: {
       show: true,
       floating: true,
-      fontSize: '14px',
+      fontSize: '22px',
       position: 'left',
       fontFamily: 'Roboto',
       fontweight: 400,
