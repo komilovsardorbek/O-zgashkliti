@@ -181,8 +181,19 @@ $("#left-arrow").click(function () {
 });
 
 // page active
-    $( ".main-navbar" ).find( "a" ).removeClass("active");
-    $( ".main-navbar" ).find( "li" ).removeClass("active");
+
+    jQuery('.menu-title.active').each(function () {
+        jQuery('.menu-title').removeClass('active');
+        jQuery('.menu-title').find('div').replaceWith('<div class="according-menu"><i class="fa fa-angle-right"></i></div>');
+        jQuery('.menu-content').slideUp('normal');
+        if (jQuery(this).next().is(':hidden') == true) {
+            jQuery(this).addClass('active');
+            jQuery(this).find('div').replaceWith('<div class="according-menu"><i class="fa fa-angle-down"></i></div>');
+            jQuery(this).next().slideDown('normal');
+        } else {
+            jQuery(this).find('div').replaceWith('<div class="according-menu"><i class="fa fa-angle-right"></i></div>');
+        }
+    });
 
     var current = window.location.pathname
     $(".main-navbar ul>li a").filter(function() {
