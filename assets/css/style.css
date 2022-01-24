@@ -7147,10 +7147,10 @@ table tbody .border-bottom-warning td {
 }
 
 .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu > li a {
-    padding: 10px 15px;
+    padding: 9px 14px;
     position: relative;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu > li a svg {
@@ -22169,7 +22169,7 @@ p.data-attributes svg {
     }
 
     .blog-box .blog-details-second .blog-post-date {
-        margin-top: -35px;
+        margin-top: -15px;
     }
 
     .blog-box .blog-details-second .blog-post-date .blg-month, .blog-box .blog-details-second .blog-post-date .blg-date {
@@ -22291,7 +22291,7 @@ p.data-attributes svg {
     }
 
     .blog-box .blog-details-second .blog-post-date {
-        margin-top: -35px;
+        margin-top: -15px;
     }
 
     .blog-box .blog-details-second .blog-post-date .blg-month, .blog-box .blog-details-second .blog-post-date .blg-date {
