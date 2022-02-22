@@ -19,23 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
 </head>
 <body>
-<style>
-    .bg-image{
-        position: relative;
-        background-image: url(../assets/images/banner.jpg) ;
-        background-repeat: no-repeat;
-        background-size:100% 100%;
-    }
-    .bg-image:before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(34, 45, 115, 0.5);
-    }
-</style>
+
 <div class="loader-wrapper">
     <div class="theme-loader">
         <div class="loader-p"></div>
@@ -44,35 +28,36 @@
 <section class="bg-image">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-12 p-0">
-                <div class="login-card">
-                    <form class="theme-form login-form shadow-lg">
-                        <h4>Кириш</h4>
-                        <h6>Хуш келибсиз! Ўзгашклитига киринг.</h6>
-                        <div class="form-group">
-                            <label>Електрон почта манзили</label>
-                            <div class="input-group"><span style="background-color: #90b4cd40" class="input-group-text"><i style="color: #168eea" class="icon-email"></i></span>
-                                <input class="form-control" type="email" required="" placeholder="uzgashtliti@gmail.com">
+                        <div class="col-xl-5"><img class="bg-img-cover bg-center" src="../assets/images/0001.jpg" alt="looginpage"></div>
+                        <div class="col-xl-7 p-0">
+                            <div class="login-card">
+                                <form class="theme-form login-form shadow-lg">
+                                    <h4>Кириш</h4>
+                                    <h6>Хуш келибсиз! Ўзгашклитига киринг.</h6>
+                                    <div class="form-group">
+                                        <label>Електрон почта манзили</label>
+                                        <div class="input-group"><span style="background-color: #90b4cd40" class="input-group-text"><i style="color: #168eea" class="icon-email"></i></span>
+                                            <input class="form-control" type="email" required="" placeholder="uzgashtliti@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Парол</label>
+                                        <div class="input-group"><span class="input-group-text"><i style="color: #168eea" class="icon-lock"></i></span>
+                                            <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
+                                            <div class="show-hide"><span class="show">                         </span></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="checkbox1" type="checkbox">
+                                            <label class="text-muted" for="checkbox1">Паролни еслаб қолинг</label>
+                                        </div><a style="color: #168eea" class="link" href="">Паролни унутдингизми?</a>
+                                    </div>
+                                    <div class="form-group"><a style="background-color: #168eea;color: white" class="btn btn-block" href="index.html" type="submit">Тизимга кириш</a></div>
+                                    <p>Aкаунтингиз йўқми?<a style="color: #168eea" class="ms-2" href="sign-up.html">Aкаунт яратиш</a></p>
+                                </form>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Парол</label>
-                            <div class="input-group"><span class="input-group-text"><i style="color: #168eea" class="icon-lock"></i></span>
-                                <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
-                                <div class="show-hide"><span class="show">                         </span></div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <input id="checkbox1" type="checkbox">
-                                <label class="text-muted" for="checkbox1">Паролни еслаб қолинг</label>
-                            </div><a style="color: #168eea" class="link" href="">Паролни унутдингизми?</a>
-                        </div>
-                        <div class="form-group"><a style="background-color: #168eea;color: white" class="btn btn-block" href="index.html" type="submit">Тизимга кириш</a></div>
-                        <p>Aкаунтингиз йўқми?<a style="color: #168eea" class="ms-2" href="sign-up.html">Aкаунт яратиш</a></p>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
 </section>
